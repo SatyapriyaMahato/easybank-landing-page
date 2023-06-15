@@ -23,6 +23,28 @@ html {
   font-size: 62.5%;
   font-family: "Public Sans", sans-serif;
 }
+h1 {
+  font-size: 6rem;
+  font-weight: 300;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: var(--Grayish-Blue);
+}
+/* header section */
+header {
+  background-color: var(--White);
+  z-index: 999;
+}
 a {
   text-decoration: none;
   color: var(--Grayish-Blue);
@@ -83,10 +105,70 @@ nav .menu-bar ul {
   top: 0;
   width: 100%;
 }
-.hero {
-  padding-top: 10rem;
+
+/* hero section */
+.hero-div {
+  height: 720px;
+  padding: 0 2rem;
+  display: flex;
+  overflow: hidden;
+}
+.hero-left {
+  width: 70%;
+  margin: auto 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 4em 0 0;
+  gap: 2em;
 }
 
+.hero-right {
+  width: 100%;
+  position: relative;
+}
+.hero-bg-image,
+.hero-mockup-image {
+  position: absolute;
+}
+.hero-bg-image {
+  margin-top: -180px;
+}
+.hero-mockup-image {
+  margin-top: -50px;
+  padding-left: 200px;
+}
+.about {
+  background-color: var(--Very-Light-Gray);
+}
+.about-div-wrapper,
+.about-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  padding: 10em 2em;
+  text-align: left;
+}
+.about-top {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+}
+.about-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 5em;
+}
+.about-bottom img {
+  width: 30%;
+}
+.about-div {
+  gap: 2em;
+  padding: 10em 0 0 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
