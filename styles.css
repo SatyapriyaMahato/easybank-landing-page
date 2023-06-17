@@ -74,10 +74,10 @@ li {
   font-weight: 300;
   list-style: none;
   margin: 0 0.5em;
-  padding: 1em 0;
+  padding: 1.5em 0;
 }
 .nav-link {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   background-image: linear-gradient(
     to right,
     var(--Lime-Green),
@@ -208,7 +208,6 @@ nav .menu-bar ul {
 .div-blogs-bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   gap: 4em;
 }
 .div-article {
