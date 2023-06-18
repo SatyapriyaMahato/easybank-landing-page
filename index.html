@@ -14,29 +14,26 @@
 </head>
 
 <body>
-  
+
   <!--Header Section-->
   <header class="header sticky">
-    <nav class="container">
-      <div class="site-logo">
+    <nav class="top-nav container">
+      <div>
         <img src="./images/logo.svg" alt="site logo" />
       </div>
-      <div class="menu-bar">
-        <ul class="nav-menu">
-          <li><a class="nav-link" href="">Home</a></li>
-          <li><a class="nav-link" href="#about">About</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-          <li><a class="nav-link" href="#blog">Blog</a></li>
-          <li><a class="nav-link" href="#careers">Careers</a></li>
-        </ul>
-      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+        <div class='menu-button'></div>
+      </label>
+      <ul class="menu">
+        <li><a class="nav-link" href="">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#blog">Blog</a></li>
+        <li><a class="nav-link" href="#careers">Careers</a></li>
+      </ul>
       <div class="navbar-btn">
-        <button >Request Invite</button>
-      </div>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <button>Request Invite</button>
       </div>
     </nav>
   </header>
