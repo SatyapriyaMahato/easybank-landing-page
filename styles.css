@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 :root {
   /* ### Primary */
 
@@ -19,37 +20,46 @@
   --Very-Light-Gray: hsl(0, 0%, 98%);
   --White: hsl(0, 0%, 100%);
 }
+
 html {
   font-size: 62.5%;
   font-family: "Public Sans", sans-serif;
 }
+
 body {
   overflow-x: hidden;
 }
+
 section {
   padding: 10em 0;
 }
+
 h1 {
   font-size: 6rem;
   font-weight: 300;
 }
+
 h2 {
   font-size: 4rem;
   font-weight: 300;
 }
+
 h3 {
   font-size: 3rem;
   font-weight: 300;
 }
+
 h4 {
   font-size: 2rem;
   font-weight: 300;
 }
+
 h5 {
   font-size: 1rem;
   font-weight: 300;
   color: var(--Grayish-Blue);
 }
+
 p {
   font-size: 1.8rem;
   font-weight: 300;
@@ -58,17 +68,33 @@ p {
 }
 
 /* header section */
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #000000;
+}
+
 header {
   background-color: var(--White);
   z-index: 999;
 }
+
 a {
   text-decoration: none;
   color: var(--Grayish-Blue);
 }
+
 a:hover {
   color: var(--Dark-Blue);
 }
+
 li {
   font-size: 2rem;
   font-weight: 300;
@@ -76,13 +102,12 @@ li {
   margin: 0 0.5em;
   padding: 1.5em 0;
 }
+
 .nav-link {
   padding-bottom: 3rem;
-  background-image: linear-gradient(
-    to right,
-    var(--Lime-Green),
-    var(--Bright-Cyan)
-  );
+  background-image: linear-gradient(to right,
+      var(--Lime-Green),
+      var(--Bright-Cyan));
   background-size: 0 5px, auto;
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -93,24 +118,25 @@ li {
   background-size: 100% 4px, auto;
   cursor: pointer;
 }
+
 button {
   font-size: 1.5rem;
   font-weight: 400;
   height: 3em;
   width: 12em;
   border: none;
-  background-image: linear-gradient(
-    to right,
-    var(--Lime-Green),
-    var(--Bright-Cyan)
-  );
+  background-image: linear-gradient(to right,
+      var(--Lime-Green),
+      var(--Bright-Cyan));
   color: var(--White);
   border-radius: 4em;
 }
+
 button:hover {
   filter: opacity(0.5);
   cursor: pointer;
 }
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -143,6 +169,7 @@ nav .menu-bar ul {
   padding: 0 2rem;
   display: flex;
 }
+
 .hero-left {
   width: 70%;
   margin: auto 0;
@@ -157,13 +184,16 @@ nav .menu-bar ul {
   width: 100%;
   position: relative;
 }
+
 .hero-bg-image,
 .hero-mockup-image {
   position: absolute;
 }
+
 .hero-bg-image {
   margin-top: -180px;
 }
+
 .hero-mockup-image {
   margin-top: -50px;
   padding-left: 200px;
@@ -173,8 +203,9 @@ nav .menu-bar ul {
 .about {
   background-color: var(--Very-Light-Gray);
 }
-.about-div-wrapper,
-.about-div {
+
+.div-about-wrapper,
+.div-about {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -182,21 +213,25 @@ nav .menu-bar ul {
   align-items: left;
   text-align: left;
 }
+
 .about-top {
   width: 60%;
   display: flex;
   flex-direction: column;
   gap: 3em;
 }
+
 .about-bottom {
   display: flex;
   justify-content: space-between;
   gap: 6em;
 }
+
 .about-bottom img {
   width: 30%;
 }
-.about-div {
+
+.div-about {
   gap: 4em;
   padding: 10em 0 0 0;
 }
@@ -205,22 +240,25 @@ nav .menu-bar ul {
 .div-blogs-wrapper .top {
   margin: 4em 0;
 }
+
 .div-blogs-bottom {
   display: flex;
   justify-content: space-between;
   gap: 4em;
 }
+
 .div-article {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
+
 .div-article img {
   width: 100%;
   max-width: 350px;
   height: 250px;
   object-fit: cover;
 }
+
 .text-box {
   display: flex;
   flex-direction: column;
@@ -228,6 +266,7 @@ nav .menu-bar ul {
   margin-top: 2em;
   padding: 2em 3em;
 }
+
 .text-box p {
   font-size: 1.6rem;
 }
@@ -237,36 +276,44 @@ footer {
   background-color: var(--Dark-Blue);
   padding: 6em 0;
 }
+
 .div-footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
+
 .footer-left {
   display: flex;
   gap: 15em;
 }
+
 .socials {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 3em;
 }
+
 .social-media-icons {
   display: flex;
   justify-content: space-between;
   gap: 1.5em;
 }
+
 .links {
   display: flex;
 }
+
 .links li {
   font-size: 1.6rem;
   padding: 0.5em 0;
 }
+
 .links a {
   color: var(--White);
 }
+
 .links a:hover {
   color: var(--Lime-Green);
 }
@@ -277,11 +324,118 @@ footer {
   gap: 3em;
   align-items: flex-end;
 }
+
 .attribution {
   margin-top: 6em;
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-btn{
+    display: none;
+  }
+  header {
+    padding: 2em 0;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .menu-bar{display: none;}
+  .menu-bar .active-bar {
+    flex-direction: column;
+    position: absolute;
+    top: 8em;
+    /* margin: 0 auto; */
+    z-index: 4;
+    padding: 4em;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    display: block;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-link {
+    color: #000000;
+    font-size: 3rem;
+  }
+
+  .hero-div {
+    height: 720px;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4em;
+  }
+  
+  .hero-left {
+    width: 70%;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    gap: 2em;
+  }
+  
+  .hero-right {
+    width: 100%;
+    position: static;
+  }
+  
+  .hero-bg-image,
+  .hero-mockup-image {
+    position: static;
+    display: block;
+  }
+  
+  .hero-bg-image {
+    margin-top: 10em;
+  }
+  
+  .hero-mockup-image {
+    margin-top: 0;
+    width: 100%;
+    padding: 0;
+
+  }
+
+
+  .about-bottom,
+  .div-blogs-bottom,
+  .div-footer,
+  .footer-left,
+  .footer-div-btn,
+  .div-about-wrapper,
+  .div-about,
+  .div-blogs-wrapper,
+  .div-article {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+  }
+
+  section {
+    padding: 4em 0;
+  }
 }
