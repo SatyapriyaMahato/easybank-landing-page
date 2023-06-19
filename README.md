@@ -31,13 +31,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshots/desktop.jpg)
-![](./screenshots/mobile.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Solution](https://github.com/SatyapriyaMahato/room-homepage)
-- Live Site URL: [Live site](https://satyapriyamahato.github.io/room-homepage/)
+- Solution URL: [Solution](https://github.com/SatyapriyaMahato/easybank-landing-page)
+- Live Site URL: [Live site](https://satyapriyamahato.github.io/easybank-landing-page/)
 
 ## My process
 
