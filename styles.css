@@ -113,7 +113,6 @@ li {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #FFF;
   height: 80px;
   padding: 1em;
@@ -142,6 +141,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-right: 2em;
 }
 
 #menu-toggle {
@@ -230,7 +230,7 @@ nav .menu-bar ul {
 
 /* hero section */
 .hero-div {
-  height: 720px;
+  height: 600px;
   padding: 0 2rem;
   display: flex;
 }
@@ -286,10 +286,10 @@ nav .menu-bar ul {
   gap: 3em;
 }
 
-.about-bottom {
+.about-bottom, .div-blogs-bottom{
   display: flex;
   justify-content: space-between;
-  gap: 6em;
+  gap: 4em;
 }
 
 .about-bottom img {
@@ -305,12 +305,6 @@ nav .menu-bar ul {
 /* blogs sections */
 .div-blogs-wrapper .top {
   margin: 4em 0;
-}
-
-.div-blogs-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 4em;
 }
 
 .div-article {
@@ -350,8 +344,9 @@ footer {
 }
 
 .footer-left {
+  width: 100%;
   display: flex;
-  gap: 15em;
+  gap: 6em;
 }
 
 .socials {
@@ -389,6 +384,7 @@ footer {
   flex-direction: column;
   gap: 3em;
   align-items: flex-end;
+  text-align: right;
 }
 
 .attribution {
