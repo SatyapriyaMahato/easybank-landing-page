@@ -25,8 +25,7 @@ html {
   font-size: 62.5%;
   font-family: "Public Sans", sans-serif;
 }
-
-body {
+body{
   overflow-x: hidden;
 }
 
@@ -83,6 +82,36 @@ a {
 a:hover {
   color: var(--Dark-Blue);
 }
+button {
+  font-size: 1.5rem;
+  font-weight: 400;
+  height: 3em;
+  width: 12em;
+  border: none;
+  background-image: linear-gradient(to right,
+      var(--Lime-Green),
+      var(--Bright-Cyan));
+  color: var(--White);
+  border-radius: 4em;
+}
+button:hover {
+  filter: opacity(0.5);
+  cursor: pointer;
+}
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2em;
+  background-color: white;
+  margin: 0 auto;
+}
+
+nav .menu-bar ul {
+  display: flex;
+}
 
 li {
   font-size: 2rem;
@@ -90,6 +119,14 @@ li {
   list-style: none;
   margin: 0 0.5em;
   padding: 1.5em 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 4em;
 }
 
 .nav-link {
@@ -184,44 +221,6 @@ li {
   transform: rotate(-405deg);
 }
 
-button {
-  font-size: 1.5rem;
-  font-weight: 400;
-  height: 3em;
-  width: 12em;
-  border: none;
-  background-image: linear-gradient(to right,
-      var(--Lime-Green),
-      var(--Bright-Cyan));
-  color: var(--White);
-  border-radius: 4em;
-}
-
-button:hover {
-  filter: opacity(0.5);
-  cursor: pointer;
-}
-
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 2em;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2em;
-  background-color: white;
-  margin: 0 auto;
-}
-
-nav .menu-bar ul {
-  display: flex;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -231,7 +230,6 @@ nav .menu-bar ul {
 /* hero section */
 .hero-div {
   height: 600px;
-  padding: 0 2rem;
   display: flex;
 }
 
@@ -397,10 +395,11 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) and (orientation: portrait) {
   .navbar-btn{
     display: none;
   }
+  
   header{
     padding: 2em 0;
   }
