@@ -100,12 +100,22 @@ button:hover {
 }
 
 
-nav {
+/* nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2em;
   background-color: white;
+  margin: 0 auto;
+} */
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFF;
+  height: 80px;
+  padding: 1em;
   margin: 0 auto;
 }
 
@@ -145,15 +155,7 @@ li {
   cursor: pointer;
 }
 
-.top-nav {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  color: #FFF;
-  height: 80px;
-  padding: 1em;
-}
+
 
 
 
@@ -229,7 +231,7 @@ li {
 
 /* hero section */
 .hero-div {
-  height: 600px;
+  height: 80vh;
   display: flex;
   overflow-x: clip;
 
@@ -452,7 +454,6 @@ footer {
     flex-direction: column-reverse;
     justify-content: flex-start;
     height: auto;
-    gap: 4em;
     padding: 0;
   }
 
@@ -466,7 +467,7 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
-    padding: 4em;
+    padding: 1em 4em;
   }
   
   .hero-right {
@@ -482,15 +483,15 @@ footer {
     width: 100%;
     position: static;
   }
-
-  .hero-bg-image {
-    margin-top: 0px;
-    z-index: -1;
+  .hero-mockup-image{
+    padding-left: 0px;
+    margin-top: -110%;
+    width: 80%;
   }
 
-  .hero-mockup-image {
-    padding-left: 0px;
-    margin-top: -130%;
+  .hero-bg-image {
+    margin-top: -5em;
+    z-index: -1;
   }
   .about {
     margin: 0;
