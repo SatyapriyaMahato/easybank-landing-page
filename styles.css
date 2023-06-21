@@ -34,12 +34,12 @@ section {
 }
 
 h1 {
-  font-size: 4.6rem;
+  font-size: 4rem;
   font-weight: 300;
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 3.5rem;
   font-weight: 300;
 }
 
@@ -327,7 +327,9 @@ li {
   margin-top: 2em;
   padding: 2em 3em;
 }
-
+.text-box .author{
+  font-size: 1rem;
+}
 .text-box p {
   font-size: 1.6rem;
 }
@@ -450,6 +452,8 @@ footer {
     flex-direction: column-reverse;
     justify-content: flex-start;
     height: auto;
+    gap: 4em;
+    padding: 0;
   }
 
   .hero-left {
@@ -462,11 +466,11 @@ footer {
     align-items: center;
     text-align: center;
     width: 100%;
+    padding: 4em;
   }
   
   .hero-right {
     position: static;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -475,7 +479,7 @@ footer {
 
   .hero-bg-image,
   .hero-mockup-image {
-    width: 90%;
+    width: 100%;
     position: static;
   }
 
@@ -486,7 +490,7 @@ footer {
 
   .hero-mockup-image {
     padding-left: 0px;
-    margin-top: -120%;
+    margin-top: -130%;
   }
   .about {
     margin: 0;
