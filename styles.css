@@ -7,14 +7,13 @@
 }
 
 :root {
+  
   /* ### Primary */
-
   --Dark-Blue: hsl(233, 26%, 24%);
   --Lime-Green: hsl(136, 65%, 51%);
   --Bright-Cyan: hsl(192, 70%, 51%);
 
   /* ### Neutral */
-
   --Grayish-Blue: hsl(233, 8%, 62%);
   --Light-Grayish-Blue: hsl(220, 16%, 96%);
   --Very-Light-Gray: hsl(0, 0%, 98%);
@@ -67,8 +66,6 @@ p {
 }
 
 /* header section */
-
-
 header {
   background-color: var(--White);
   z-index: 999;
@@ -82,6 +79,7 @@ a {
 a:hover {
   color: var(--Dark-Blue);
 }
+
 button {
   font-size: 1.5rem;
   font-weight: 400;
@@ -94,20 +92,12 @@ button {
   color: var(--White);
   border-radius: 4em;
 }
+
 button:hover {
   filter: opacity(0.5);
   cursor: pointer;
 }
 
-
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2em;
-  background-color: white;
-  margin: 0 auto;
-} */
 .top-nav {
   display: flex;
   flex-direction: row;
@@ -154,10 +144,6 @@ li {
   background-size: 100% 4px, auto;
   cursor: pointer;
 }
-
-
-
-
 
 .menu {
   display: flex;
@@ -410,12 +396,15 @@ footer {
   header{
     padding: 2em 0;
   }
+  
   .menu-button-container {
     display: flex;
   }
+  
   .top-nav{
     height: 20px;
   }
+  
   .menu {
     position: absolute;
     top: 0;
@@ -426,6 +415,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  
   #menu-toggle ~ .menu li {
     height: 0;
     margin: 0;
@@ -433,11 +423,13 @@ footer {
     border: 0;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+  
   #menu-toggle:checked ~ .menu li {
     height: 2.5em;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
+  
   .menu > li {
     display: flex;
     justify-content: center;
